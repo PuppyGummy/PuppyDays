@@ -33,6 +33,7 @@ public class CharacterFollow : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         currentCharacter = GetComponent<PlayerController3D>();
         animator = GetComponent<Animator>();
+        agent.updateRotation = false;
     }
 
     // Update is called once per frame
